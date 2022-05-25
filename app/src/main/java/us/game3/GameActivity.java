@@ -89,8 +89,8 @@ public class GameActivity extends Activity implements View.OnClickListener{
         partB++;
 
         correctAnswer = partA * partB;
-        int wrongAnswer1 = correctAnswer - (int)(Math.random() * range) + min;
-        int wrongAnswer2 = correctAnswer + (int)(Math.random() * range) + min;
+        int wrongAnswer1 = correctAnswer - (randInt.nextInt(9)+1)*10;
+        int wrongAnswer2 = correctAnswer + (randInt.nextInt(9)+1)*10;
 
         textObjectPartA.setText(""+partA);
         textObjectPartB.setText(""+partB);
